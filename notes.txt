@@ -1,0 +1,41 @@
+script written 2019/11/25
+
+
+SITE STRUCTURE
+
+https://yoji.jitenon.jp/sp/
+top level
+
+-> https://yoji.jitenon.jp/sp/cat/kyu*.html
+   categories by kanken level, cat/*.html for all categories
+
+----> https://yoji.jitenon.jp/sp/yoji*/*.html
+      individual yojijukugo
+
+      table.yojimain tr > th.row
+        category text
+        rowspan = number of items
+      
+      table.yojimain tr > td
+        item text
+
+      remove tags from:
+        四字熟語 (styling)
+        漢字検定 (link)
+
+      other notes:
+        読み方 can have multiple readings in the format: READING（ALT）
+        漢字検定 to convert from japanese level name to plain number, e.g. 準１級 -> 1.5
+        類義語 text has the format: YOJIJUKUGO（READING）
+        類義語 can also be links, worth keeping?
+        漢字詳細 has a weird arrangement, reorganize?
+
+
+
+NOTES
+
+- main purpose is to dump the yojijukugo for kanken-related study
+- site seems to have more than just kanken-related yojijukugo, possibility of a more comprehensive dump?
+- output to database rather than plain csv?
+- generate minimum kanji knowledge rating in terms of kklc/kd/rtk numbers?
+  - both for yojijukugo and yojijukugo+description field?
